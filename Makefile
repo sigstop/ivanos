@@ -53,6 +53,3 @@ dialyzer: compile
 
 compile test clean: rebar
 
-rebar:
-	wget -c http://github.com/rebar/rebar/wiki/rebar
-	chmod +x $@
