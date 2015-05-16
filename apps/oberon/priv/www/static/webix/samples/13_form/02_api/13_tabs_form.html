@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../codebase/webix.css" type="text/css" media="screen" charset="utf-8">
+		<script src="../../../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../../common/testdata.js"></script>
+		<title>Form with Tabs</title>
+	</head>
+	<body>
+		<script type="text/javascript" charset="utf-8">
+			webix.ui({
+				view:"form", elements:[
+					{
+						view:"tabview",
+						tabbar:{ options:["A","B","C"]}, animate:false,
+						cells:[
+							{ id:"A", rows:[
+								{ view:"text", name:"value1", label:"value1" },
+								{}
+							]},
+							{ id:"B", rows:[
+								{ view:"text", name:"value2", label:"value2" },
+								{}
+							]},
+							{ id:"C", rows:[
+								{ view:"text", name:"value3", label:"value3" },
+								{}
+							]}
+						]
+					},
+                    { cols:[
+                        {},
+                        { view:"button", value:"Get value", click:function(){
+                            webix.message("<pre>"+JSON.stringify($$("$form1").getValues(), 0, 1)+"</pre>");
+                        }},
+                        {}
+                    ]}
+				]
+			});
+
+			//webix.debug = true;
+			$$("$form1").setValues({
+				value1:"111",
+				value2:"222",
+				value3:"333"
+			});
+		</script>
+	</body>
+</html>

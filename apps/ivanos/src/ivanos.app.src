@@ -1,0 +1,12 @@
+{application, ivanos,
+ [
+  {description, "IvanOS Distributed Operating System"},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, {ivanos_app, []}},
+  {env, []}
+ ]}.

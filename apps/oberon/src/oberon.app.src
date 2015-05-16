@@ -1,0 +1,12 @@
+{application, oberon,
+ [
+  {description, "Oberon: IvanOS Continous Operations Portal"},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, {oberon_app, []}},
+  {env, []}
+ ]}.

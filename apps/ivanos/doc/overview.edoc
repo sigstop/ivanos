@@ -1,0 +1,7 @@
+   ** this is the overview.doc file for IvanOS **
+
+   @author Friends of Ivan <friends@ivanos.org>
+   @copyright 2015 IvanOS.org
+   @version 0.0.1
+   @title Welcome to IvanOS!
+   @doc IvanOS is an open source distributed operating system for applications exhibiting massive concurrency and distributed scale which require continuous operation on commodity infrastructure.
