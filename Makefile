@@ -4,7 +4,7 @@ COMBO_PLT = $(HOME)/.ivanos_combo_dialyzer_plt
 
 .PHONY: all compile deps docs test clean distclean ct
 
-all: generate
+all: docs generate
 
 generate: compile
 	./rebar skip_deps=true generate -f
@@ -24,6 +24,9 @@ eunit: compile
 docs:
 	cd apps/ivanos; ../../rebar doc skip_deps=true
 	cp apps/ivanos/priv/ivanos.png apps/ivanos/doc/erlang.png
+	mkdir -p apps/oberon/priv/www/doc
+	mkdir -p apps/oberon/priv/www/doc/system
+	cp -r apps/ivanos/doc/ apps/oberon/priv/www/doc/system/
 
 
 ct: compile
