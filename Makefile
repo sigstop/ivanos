@@ -26,7 +26,7 @@ docs:
 	cp apps/ivanos/priv/ivanos.png apps/ivanos/doc/erlang.png
 	mkdir -p apps/oberon/priv/www/doc
 	mkdir -p apps/oberon/priv/www/doc/system
-	cp -r apps/ivanos/doc/ apps/oberon/priv/www/doc/system/
+	cp -r apps/ivanos/doc/* apps/oberon/priv/www/doc/system/
 
 
 ct: compile
