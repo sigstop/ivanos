@@ -4,6 +4,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve" onload="init(evt)">
   <style>
+  /*
   circle:hover
   {
     opacity: 0.5;
@@ -13,6 +14,7 @@
   {
   opacity: 0.5;
   };
+  */
     
   .tooltip
   {
@@ -50,9 +52,7 @@
 
 
 <circle fill="#448EBF" cx="305.9" cy="339.7" r="226.1"
-	onmousemove="ShowTooltip(evt, 'click for documentation')"
-	onmouseout="HideTooltip()"
-	onclick="window.parent.document.location.href='https://goo.gl/drUrrN';"/>
+	/>
 <circle fill="#5D7595" cx="305.9" cy="339.1" r="136"/>
 <circle fill="#F26522" cx="391.1" cy="324" r="66.6"/>
 <circle fill="#5D7595" cx="176" cy="216" r="28.5"/>
@@ -120,9 +120,7 @@
 <path fill="#6FBE44" d="M146.1,305.4l2.4,5l4.4-2.5C152.9,307.9,150.3,305.6,146.1,305.4z"/>
 <polygon fill="#6FBE44" points="143.3,315.8 147.3,317 144.4,318.6 "/>
 <polygon fill="#6FBE44" points="136,336.3 132.2,343.1 138.1,337.1 "/>
-<g onmousemove="ShowTooltip(evt, 'click to remember Ivan')"
-	onmouseout="HideTooltip()"
-	onclick="window.parent.document.location.href='https://www.facebook.com/ivan.pulleyn?fref=ts';">
+<g >
 <path fill="#5D7595" d="M178.5,628.1h-25.9v11.9h5c0,0,1,32.5,1,43.6h-6v10.9h25.9v-10.9h-6.9l-0.2-35.3l0-7.2l1.9,0.4
 	c0-2.4,4.5-2.5,4.5-2.5c0,0,0,0,0,0c0,0,0,0,0,0h0.7V628.1z"/>
 <polygon fill="#5D7595" points="370,628.2 344.2,628.2 344.2,639.1 350.7,639.1 350.1,672.5 316.6,628.2 298.9,628.2 298.9,639.1 
